@@ -1,3 +1,45 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("../images/Depositphotos_30828375_s-2019-1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(187, 126, 165, 0.3)
+}
+
+header {
+    background: linear-gradient(#e66465, #9198e5);
+    box-shadow: 5px 10px #888888;
+
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.botao {
+    margin-top: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    width: 230px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #ba7e97;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
 }

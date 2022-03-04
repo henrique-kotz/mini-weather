@@ -28,7 +28,7 @@ function renderWeather(data) {
     console.log(data)
     const bannerInfo = document.querySelector('.current-weather .banner');
     bannerInfo.innerHTML = `
-        <h2>${data.weather[0].description}</h2>
+        <h2>Clima: ${data.weather[0].description}</h2>
     `;
 
     const weatherData = document.querySelector('.current-weather .weather-data');
@@ -45,4 +45,12 @@ function manualWeather() {
     alert('Por favor, ṕreencha os dados para obter as informações do tempo :D');
 }
 
-checkIfGeolocation();
+function trocarTela(){
+    const trocarTela1 = document.querySelector(".container1");
+    const trocarTela2 = document.querySelector(".current-weather")
+    trocarTela1.classList.add("hidden");
+    trocarTela2.classList.remove("hidden");
+    checkIfGeolocation();
+}
+
+
